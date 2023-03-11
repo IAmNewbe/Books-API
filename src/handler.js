@@ -70,6 +70,7 @@ const getAllBooksHandler = (request, h) => {
   let filteredBooks = books;
 
   if (name !== undefined) {
+    // eslint-disable-next-line max-len
     filteredBooks = filteredBooks.filter((book) => book.name.toLowerCase().includes(name.toLowerCase()));
   }
 
